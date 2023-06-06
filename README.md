@@ -1,7 +1,7 @@
 # ngl.link-spammer
 Spammer for the popular website ngl.link.
 Normally, ngl.link throttles a user after 25 messages, but with threads, we can simply send lets say, 250 messages at the same time so it wouldnt throttle us.
-To enable proxies, set "proxies" to true in "config.json"
+To enable proxies, set "proxies" to true in "config.json".
 If you enable proxies, each message has a random proxy assigned to it.
 If you want to enable random messages, set "randommsgs" to true in "config.json".
 If you want to add random messages, do so in msg.py.
