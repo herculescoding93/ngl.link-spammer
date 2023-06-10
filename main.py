@@ -5,6 +5,7 @@ from colorama import Fore
 import threading
 from msg import randomQuestions
 import json
+import time
 
 #Headers required to make ngl think that we are a real user and not a bot
 headers = {
@@ -58,9 +59,10 @@ def handler(totalMsgs, target, message):
         threads[i].start()
     for i in range(totalMsgs):
         threads[i].join()
+    start = time.time()
     while len(f) < totalMsgs:
         continue
-    print(f"{Fore.RED}Messages got {Fore.WHITE}sent!")
+    print(f"{Fore.RED}Messages got {Fore.WHITE}sent in {(time.time() - start) / 1000} milliseconds!")
 
 with open("config.json") as config:
     data = json.load(config)

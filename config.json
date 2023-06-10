@@ -1,4 +1,4 @@
 {
     "proxies" : true,
-    "randommsgs": true
+    "randommsgs": false
 }
